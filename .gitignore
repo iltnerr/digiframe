@@ -1,0 +1,5 @@
+__pycache__/
+playlists/*
+!playlists/.gitkeep
+venv/
+notes.txt
