@@ -14,11 +14,7 @@ PORTRAIT_MODE = True
 class HiddenRoot(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
-        #hackish way, essentially makes root window
-        #as small as possible but still "focused"
-        #enabling us to use the binding on <esc>
         self.wm_geometry("0x0+0+0")
-
         self.window = MySlideShow(self)
         self.window.startCycle()
 
